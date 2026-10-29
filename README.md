@@ -17,6 +17,7 @@ Then invoke it with `$clarity-coach`, or let Codex select it automatically when 
 ## What it guides
 
 - Match explanation depth to the user's request.
+- Adapt to the user's demonstrated familiarity in each subject area, and revise that estimate as the conversation develops.
 - Find and explain missing prerequisites when the user is confused.
 - Choose prose, steps, tables, diagrams, or charts based on the information.
 - Preserve assumptions, caveats, and uncertainty while keeping the explanation concise.
