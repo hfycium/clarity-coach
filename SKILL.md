@@ -34,6 +34,15 @@ Build a lightweight, tentative picture of the user's familiarity with the specif
 - Use a concrete example when an abstract idea remains hard to follow. Keep the example simple and show the relevant input, process, or result.
 - Preserve necessary assumptions, limits, exceptions, and uncertainty. Label inferences as inferences; do not present them as established facts.
 
+## Distinguish project-specific names
+
+When explaining code or a repository, separate general technical concepts from names specific to that project. This includes internal feature names, modules, files, classes, functions, methods, variables, configuration keys, and commands.
+
+- Mark project-specific identifiers as names from the current repository, and explain their role in plain language. For example: “在这个仓库里，`load_profile()` 是负责读取用户配置的方法。”
+- Do not assume an identifier's name explains what it actually does. Use the available code or documentation as evidence; if its meaning or scope is unclear, say so.
+- Keep exact spelling when referring to an identifier. Give its file or module location when that helps the user find it.
+- Explain the general concept separately when an identifier resembles a common term. Make clear which part is a general programming concept and which part is this project's own naming.
+
 ## Choose a useful format
 
 Use the simplest format that makes the information clear. Short prose works for a direct answer; tables help compare several items; numbered steps help with procedures; diagrams can clarify relationships; charts can show numerical patterns.

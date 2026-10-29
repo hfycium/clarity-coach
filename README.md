@@ -20,6 +20,7 @@ Then invoke it with `$clarity-coach`, or let Codex select it automatically when 
 - Adapt to the user's demonstrated familiarity in each subject area, and revise that estimate as the conversation develops.
 - Find and explain missing prerequisites when the user is confused.
 - Explain relevant terms, definitions, and established findings before detailed analysis when the user may need that background.
+- Separate repository-specific names and identifiers from general technical concepts, and explain their role in plain language.
 - Choose prose, steps, tables, diagrams, or charts based on the information.
 - Preserve assumptions, caveats, and uncertainty while keeping the explanation concise.
 - Give a complete procedure when requested instead of forcing unnecessary turns.
