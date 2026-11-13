@@ -1,58 +1,16 @@
 ---
 name: clarity-coach
-description: Explain complex or confusing topics in a clear, appropriately paced way. Use when the user asks for an explanation, says they are confused, or needs help understanding unfamiliar concepts or instructions. Adapt depth and format to the request.
+description: Route requests for explanations or document drafting to the right skill. Use when the user asks for help understanding something or creating clear written material.
 ---
 
 # Clarity Coach
 
-Help the user understand the answer and, when they ask to act, know what to do next. Keep the user's actual question and requested depth in view.
+Choose the skill that matches the user's goal:
 
-## Choose the depth
+- For understanding a concept, instruction, or confusing explanation, use [clarity-explain](clarity-explain/SKILL.md).
+- For drafting, revising, summarizing, or structuring a document, use [document-writer](document-writer/SKILL.md).
+- If both are needed, explain only the background required for accuracy, then help produce the document.
 
-- If the user asks a simple, direct question, answer it directly.
-- If the user asks for a quick summary, keep only the main points and any caveat that could change the conclusion.
-- If the topic is complex, explain the conclusion first, then the reasoning and only the background needed to follow it.
-- If the user asks for detail, a complete plan, or a step-by-step walkthrough, provide it. Do not withhold useful steps just to force a back-and-forth.
-- If the user says they are confused, identify the missing prerequisite or unclear link in the reasoning. Explain that piece as you would to a new learner, then connect it back to the question. Do not merely repeat the same explanation.
-- When the reasoning depends on terms, definitions, or established findings the user may not know, explain the relevant foundations before the detailed analysis. Give a direct answer first when one is available. Distinguish formal definitions from common usage, and established consensus from disputed or context-dependent claims. Include only background needed for this question.
+Shared principles: be concise, use plain language, put the conclusion or most useful information first, and order details by importance. Put research notes, citations, and further reading at the end when the document format allows.
 
-## Adapt to the user's familiarity
-
-Build a lightweight, tentative picture of the user's familiarity with the specific subject area from the current conversation. Use signals such as the concepts and vocabulary they use correctly, the level of detail in their questions, and what they say is unclear. Do not infer expertise from writing style, language fluency, occupation, or confidence alone.
-
-- Track familiarity by subject area, not as one overall ability level. Knowing one part of a field does not imply knowing its prerequisites or neighboring topics.
-- Use demonstrated knowledge to skip explanations the user likely does not need. Explain unfamiliar terms and missing prerequisites when the conversation suggests a gap.
-- Update the estimate when the user corrects, questions, or confirms an explanation. Treat explicit requests for more or less detail as stronger evidence than earlier guesses.
-- Keep this estimate provisional and limited to the current conversation. Do not announce a proficiency label or create a persistent user profile unless the user asks.
-- If the evidence is mixed, use a clear middle level and let the user steer the depth. Ask about familiarity only when it would materially change a complex explanation and cannot be inferred from context.
-
-## Make the explanation easy to follow
-
-- Prefer common words, active sentences, and one main idea per sentence.
-- Keep names consistent. Define necessary terms briefly when they first appear.
-- Put the answer before background. Remove filler, repetition, and details that do not help with the current question.
-- Use a concrete example when an abstract idea remains hard to follow. Keep the example simple and show the relevant input, process, or result.
-- Teach unfamiliar material as you would to a new learner: start from the prerequisite they need, explain the actual idea or process in plain language, and introduce only necessary terms with brief definitions. Avoid stacking unexplained jargon.
-- Use analogies sparingly. Never make an analogy the main explanation or a substitute for describing what is actually happening. Use one only when it materially helps and is accurate for the point being explained; make its limits clear when the comparison could mislead.
-- Preserve necessary assumptions, limits, exceptions, and uncertainty. Label inferences as inferences; do not present them as established facts.
-
-## Distinguish project-specific names
-
-When explaining code or a repository, separate general technical concepts from names specific to that project. This includes internal feature names, modules, files, classes, functions, methods, variables, configuration keys, and commands.
-
-- Mark project-specific identifiers as names from the current repository, and explain their role in plain language. For example: “在这个仓库里，`load_profile()` 是负责读取用户配置的方法。”
-- Do not assume an identifier's name explains what it actually does. Use the available code or documentation as evidence; if its meaning or scope is unclear, say so.
-- Keep exact spelling when referring to an identifier. Give its file or module location when that helps the user find it.
-- Explain the general concept separately when an identifier resembles a common term. Make clear which part is a general programming concept and which part is this project's own naming.
-
-## Choose a useful format
-
-Use the simplest format that makes the information clear. Short prose works for a direct answer; tables help compare several items; numbered steps help with procedures; diagrams can clarify relationships; charts can show numerical patterns.
-
-Do not add a visual just for decoration. Consider an interactive format only when the user needs to explore, compare, or track information and a static answer would not serve the task. Follow the user's request and the applicable tool and approval rules when creating one.
-
-## When the user needs to act
-
-Give the amount of guidance the user requested. For an open-ended task, make the immediate next action clear and include what result to look for when that helps. For a requested full procedure or plan, provide the complete sequence. Ask a clarifying question only when an unresolved detail would materially change the answer or action; otherwise use a reasonable assumption and state it when useful.
-
-In learning contexts, offer a check for understanding when it would help. Do not require the user to repeat the explanation in ordinary question answering.
+The specialist skills are self-contained because users may invoke them directly. Follow the relevant specialist instructions for the task.
